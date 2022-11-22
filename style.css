@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300;400&display=swap');
+
+body { 
+  background: URL('https://wallpaperaccess.com/full/2578754.jpg');
+  background-size: cover;
+}
+
+#Main_Description {
+  text-align: center;
+  width: 90%;
+  font-family: 'Robot', sans-serif;
+  padding: .75vw 5% 0 5%;
+  font-size: 1vw
+  color: gray;
+}
+
+div {
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0;
+  right: 0;
+}
+
+.Board {
+  border: 2px solid black;
+  height: calc(18vw + 18px);
+  width: calc(18vw + 18px);
+  top: 8vh;
+  background-color: white;
+}
+
+.Description {
+  font-size: 2vw;
+  font-family: 'Roboto', sans-serif;
+  width: 35%; 
+  height: max-content;
+  text-align: center;
+  top: calc(5vh + 30vw);
+  text-align: center;
+  z-index: -1;
+}
+
+#Left_Description { left: 2.5%; right: initial; }
+#Right_Description { right: 2.5%; left: initial; }
+
+.Tile {
+  position: relative;
+  float: left;
+  height: 2vw; width: 2vw;
+  border: 1px solid black;
+}
+
+#Left_Board   { left: -60%; }
+#Right_Board  { right: -60%; }
+
+p {
+  display: block;
+  top: 5vw;
+  height: max-content;
+  width: max-content;
+  font-weight: bold;
+  font-size: 2vw;
+  font-family: 'Roboto', sans-serif; 
+  width: 100%;
+}
+
+#Left_Title { left: -50%; }
+#Right_Title { right: -50%; }
+
+#User_Input_Field {
+  width: 20%;
+  height: max-content;
+  text-align: center;
+  top: 5vh;
+  background-color: RGBA(0, 0, 0, .3);
+  padding: .5vw;
+  padding-bottom: 2vw;
+}
+
+input {
+  width: 95%;
+}
+
+#Color_Input {
+  width: 50%;
+}
+
+/* Mobile Adjustments */
+
+@media screen and (max-width: 800px) {
+  #Main_Description {
+    font-size: 1.5vw;
+  }
+}

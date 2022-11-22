@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="User_Input_Field">
+    <p>Placement Chance: 50.00%</p>
+    <input id="RNG_Input" type="range" min="2" max="100" value="2">
+    <p>Total Placements: 5</p>
+    <input id="Total_Input" type="range" min="1" max="15" value="5">
+    <p>Board Size: 9x9</p>
+    <input id="Size_Input" type="range" min="9" max="13" value="9">
+    <p>Trial Count: 1</p>
+    <input id="Trial_Input" type="range" min="1" max="100" value="1">
+    <p>Color</p>
+    <input id="Color_Input" type="color" value="#FF0000">
+  </div>
+
+  <div id="Left_Board" class="Board"></div>
+  <div id="Left_Description" class="Description">
+    The <strong>left</strong> grid determines its placement by iterating through each tile and randomly determining if it should place, based on the <strong>placement chance</strong>.
+  </div>
+  <div id="Right_Board" class="Board"></div>
+  <div id="Right_Description" class="Description">
+    The <strong>right</strong> grid determines its placement by randomly selecting one of its tiles and <em>then</em> randomly determining if it should place, based on the <placement chance</strong>
+  </div>
+
+  <div id="Main_Description">*Each grid will iterate until <em>all</em> of its placements are complete. If multiple trials are set, the intensity of the placements color will represent how often a placement was made on that tial. Each tial may only have a placement <em>once</em> per trial.
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
